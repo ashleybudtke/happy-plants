@@ -8,5 +8,4 @@ class HappyPlantsApplication
 
 fun main(args: Array<String>) {
 	runApplication<HappyPlantsApplication>(*args)
-	println("Hello World!")
 }
