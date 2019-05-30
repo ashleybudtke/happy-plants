@@ -1,6 +1,7 @@
 package com.github.ashleybudtke.happyplants.domain
 
-interface PlantRepository {
-    fun getAllPlants(): List<Plant>
-    fun getPlantById(id: Long): Plant
+import org.springframework.data.mongodb.repository.MongoRepository
+
+interface PlantRepository : MongoRepository<Plant, Long> {
+    fun findPlantById(id: Long): Plant
 }

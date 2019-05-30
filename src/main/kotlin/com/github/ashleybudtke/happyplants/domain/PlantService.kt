@@ -10,10 +10,10 @@ class PlantService {
     lateinit var plantRepository: PlantRepository
 
     fun getAllPlants(): List<Plant> {
-        return plantRepository.getAllPlants()
+        return plantRepository.findAll()
     }
 
     fun getPlantById(id: Long): Plant {
-        return plantRepository.getPlantById(id)
+        return plantRepository.findPlantById(id)
     }
 }
